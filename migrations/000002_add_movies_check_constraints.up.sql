@@ -4,4 +4,4 @@ ALTER TABLE movies ADD CONSTRAINT movies_year_check CHECK (year BETWEEN 1888 AND
 
 ALTER TABLE movies ADD CONSTRAINT genres_length_check CHECK (array_length(genres, 1) BETWEEN 1 AND 5);
 
-ALTER TABLE movies ADD CONSTRAINT movies_version_less10_check CHECK (version < 10)
+ALTER TABLE movies ADD CONSTRAINT movies_version_less10_check CHECK (version < 10);
